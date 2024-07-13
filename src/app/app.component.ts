@@ -16,7 +16,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
   title = 'rxjs_basic_concepts';
-  operatorsList: any = [{ label: 'from', path: '/from' }];
+  operatorsList: any = [
+    { label: 'from', path: '/from' },
+    { label: 'new_observable', path: '/new_observable' },
+    { label: 'functionObs', path: '/function_observable' },
+  ];
   selectedOption: string | undefined;
 
   constructor(private router: Router) {}

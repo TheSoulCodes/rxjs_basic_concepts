@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { FromComponent } from './components/operators/creation/from/from.component';
 
 export const routes: Routes = [
   {
@@ -13,5 +12,19 @@ export const routes: Routes = [
       import('./components/operators/creation/from/from.component').then(
         (m) => m.FromComponent
       ),
+  },
+  {
+    path: 'new_observable',
+    loadComponent: () =>
+      import(
+        './components/operators/creation/new-observable/new-observable.component'
+      ).then((m) => m.NewObservableComponent),
+  },
+  {
+    path: 'function_observable',
+    loadComponent: () =>
+      import(
+        './components/operators/creation/function-observable/function-observable.component'
+      ).then((m) => m.FunctionObservableComponent),
   },
 ];
