@@ -27,4 +27,11 @@ export const routes: Routes = [
         './components/operators/creation/function-observable/function-observable.component'
       ).then((m) => m.FunctionObservableComponent),
   },
+  {
+    path: 'unsubscribe',
+    loadComponent: () =>
+      import(
+        './components/miscellaneous/unsubscribe/unsubscribe.component'
+      ).then((m) => m.UnsubscribeComponent),
+  },
 ];

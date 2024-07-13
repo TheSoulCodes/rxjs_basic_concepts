@@ -16,17 +16,18 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
   title = 'rxjs_basic_concepts';
+  selectedValue: string = 'Select';
+
   operatorsList: any = [
     { label: 'from', path: '/from' },
     { label: 'new_observable', path: '/new_observable' },
     { label: 'functionObs', path: '/function_observable' },
   ];
-  selectedOption: string | undefined;
+
+  miscellaneousList: any = [{ label: 'unsubscribe', path: '/unsubscribe' }];
 
   constructor(private router: Router) {}
-  ngOnInit(): void {
-    this.selectedOption = this.operatorsList[0];
-  }
+  ngOnInit(): void {}
 
   onSelectChange(event: Event): void {
     const target = event.target as HTMLSelectElement;

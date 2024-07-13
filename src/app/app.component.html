@@ -3,8 +3,15 @@
         <img src="/assets/images/logo.png" alt="rxjs_logo">
     </a>
     <div class="dropdowns_container">
-        <select name="creation" id="creation_operators" (change)="onSelectChange($event)" [(ngModel)]="selectedOption">
+        <label for="creation_operators">Creation: </label>
+        <select name="creation" id="creation_operators" [(ngModel)]="selectedValue" (change)="onSelectChange($event)" >
             @for(option of operatorsList; track option.label){
+                <option [value]="option.path">{{option.label}}</option>
+            }
+        </select>
+        <label>miscellaneous: </label>
+        <select name="miscellaneous" id="miscellaneous" [(ngModel)]="selectedValue" (change)="onSelectChange($event)">
+            @for(option of miscellaneousList; track option.label){
                 <option [value]="option.path">{{option.label}}</option>
             }
         </select>
