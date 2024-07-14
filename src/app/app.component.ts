@@ -19,10 +19,13 @@ export class AppComponent implements OnInit {
   selectedValue: string = 'Select';
 
   operatorsList: any = [
+    { label: 'operator_basics', path: '/operator_basics' },
     { label: 'from', path: '/from' },
     { label: 'new_observable', path: '/new_observable' },
     { label: 'functionObs', path: '/function_observable' },
   ];
+
+  pipeableList: any = [];
 
   miscellaneousList: any = [{ label: 'unsubscribe', path: '/unsubscribe' }];
 

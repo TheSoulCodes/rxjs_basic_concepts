@@ -7,6 +7,13 @@ export const routes: Routes = [
       import('./components/home/home.component').then((m) => m.HomeComponent),
   },
   {
+    path: 'operator_basics',
+    loadComponent: () =>
+      import(
+        './components/operators/operator-basics/operator-basics.component'
+      ).then((m) => m.OperatorBasicsComponent),
+  },
+  {
     path: 'from',
     loadComponent: () =>
       import('./components/operators/creation/from/from.component').then(
