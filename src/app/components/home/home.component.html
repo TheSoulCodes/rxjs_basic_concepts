@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="home_main_container">
+    <div class="creation_main_container">
+        <h1>Creation</h1>
+        <ul class="operator_elements">
+            @for(operator of operatorsList; track operator.id){
+                <li>
+                    <a [routerLink]="operator.path" routerLinkActive="active" >{{operator.label}}</a>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="miscellaneous_main_container">
+        <h1>Miscellaneous</h1>
+        <ul class="operator_elements">
+            @for(operator of miscellaneousList; track operator.id){
+                <li>
+                    <a [routerLink]="operator.path" routerLinkActive="active" >{{operator.label}}</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
