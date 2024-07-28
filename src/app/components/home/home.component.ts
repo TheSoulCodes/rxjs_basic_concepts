@@ -22,7 +22,13 @@ export class HomeComponent {
 
   pipeableList: any = [];
 
-  transformationList: any = [{ id: 1, label: 'Buffer', path: '/buffer' }];
+  transformationList: any = [
+    { id: 1, label: 'Buffer', path: '/buffer' },
+    { id: 2, label: 'Bufer Count', path: '/buffercount' },
+    { id: 3, label: 'Bufer Time', path: '/buffertime' },
+    { id: 4, label: 'Bufer Toggle', path: '/buffertoggle' },
+    { id: 5, label: 'Bufer When', path: '/bufferwhen' },
+  ];
 
   miscellaneousList: any = [
     { id: 1, label: 'unsubscribe', path: '/unsubscribe' },

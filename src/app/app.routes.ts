@@ -48,4 +48,32 @@ export const routes: Routes = [
         './components/operators/transformation/buffer/buffer.component'
       ).then((m) => m.BufferComponent),
   },
+  {
+    path: 'buffercount',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/buffer-count/buffer-count.component'
+      ).then((m) => m.BufferCountComponent),
+  },
+  {
+    path: 'buffertime',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/buffer-time/buffer-time.component'
+      ).then((m) => m.BufferTimeComponent),
+  },
+  {
+    path: 'buffertoggle',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/buffer-toggle/buffer-toggle.component'
+      ).then((m) => m.BufferToggleComponent),
+  },
+  {
+    path: 'bufferwhen',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/buffer-when/buffer-when.component'
+      ).then((m) => m.BufferWhenComponent),
+  },
 ];
