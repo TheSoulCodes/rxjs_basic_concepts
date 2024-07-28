@@ -76,4 +76,32 @@ export const routes: Routes = [
         './components/operators/transformation/buffer-when/buffer-when.component'
       ).then((m) => m.BufferWhenComponent),
   },
+  {
+    path: 'take',
+    loadComponent: () =>
+      import('./components/operators/filtering/take/take.component').then(
+        (m) => m.TakeComponent
+      ),
+  },
+  {
+    path: 'takelast',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/take-last/take-last.component'
+      ).then((m) => m.TakeLastComponent),
+  },
+  {
+    path: 'takeuntil',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/take-until/take-until.component'
+      ).then((m) => m.TakeUntilComponent),
+  },
+  {
+    path: 'takewhile',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/take-while/take-while.component'
+      ).then((m) => m.TakeWhileComponent),
+  },
 ];

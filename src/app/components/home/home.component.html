@@ -21,6 +21,17 @@
         </ul>
     </div>
 
+    <div class="operator_containers filtering_main_container">
+        <h1>Filtering:</h1>
+        <ul class="operator_elements">
+            @for(operator of filteringList; track operator.id){
+                <li>
+                    <a [routerLink]="operator.path" routerLinkActive="active" >{{operator.label}}</a>
+                </li>
+            }
+        </ul>
+    </div>
+
     <div class="operator_containers miscellaneous_main_container">
         <h1>Miscellaneous:</h1>
         <ul class="operator_elements">
