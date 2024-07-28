@@ -22,6 +22,8 @@ export class HomeComponent {
 
   pipeableList: any = [];
 
+  transformationList: any = [{ id: 1, label: 'Buffer', path: '/buffer' }];
+
   miscellaneousList: any = [
     { id: 1, label: 'unsubscribe', path: '/unsubscribe' },
   ];

@@ -6,12 +6,23 @@ a{
     height: auto;
     padding: 10px;
 
+    .operator_containers{
+        margin: 16px 8px;
+    }
+
     .operator_elements{
-        display: flex;
-        list-style: none;
+        margin-left: 16px;
 
         li{
             margin-left: 8px;
+            a{
+                color: #d81b60;
+                
+                &:hover,&:active{
+                    color: #6e6e6e;
+                }
+            }
+
         }
     }
 }

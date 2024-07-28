@@ -1,0 +1,9 @@
+<div class="main_container">
+    <button (click)="startInterval()">Start Interval</button>
+    <button style="margin-left:8px;" id="displayButton"> Display Data</button>
+    @if(intervalData.length){
+        @for(item of intervalData; track item){
+            <p>{{item}}</p>
+        }
+    }
+</div>

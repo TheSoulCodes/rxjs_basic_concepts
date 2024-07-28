@@ -41,4 +41,11 @@ export const routes: Routes = [
         './components/miscellaneous/unsubscribe/unsubscribe.component'
       ).then((m) => m.UnsubscribeComponent),
   },
+  {
+    path: 'buffer',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/buffer/buffer.component'
+      ).then((m) => m.BufferComponent),
+  },
 ];
