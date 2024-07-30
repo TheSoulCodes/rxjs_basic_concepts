@@ -104,4 +104,18 @@ export const routes: Routes = [
         './components/operators/filtering/take-while/take-while.component'
       ).then((m) => m.TakeWhileComponent),
   },
+  {
+    path: 'skip',
+    loadComponent: () =>
+      import('./components/operators/filtering/skip/skip.component').then(
+        (m) => m.SkipComponent
+      ),
+  },
+  {
+    path: 'skiplast',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/skip-last/skip-last.component'
+      ).then((m) => m.SkipLastComponent),
+  },
 ];
