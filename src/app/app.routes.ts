@@ -118,4 +118,25 @@ export const routes: Routes = [
         './components/operators/filtering/skip-last/skip-last.component'
       ).then((m) => m.SkipLastComponent),
   },
+  {
+    path: 'skipuntil',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/skip-until/skip-until.component'
+      ).then((m) => m.SkipUntilComponent),
+  },
+  {
+    path: 'skipwhile',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/skip-while/skip-while.component'
+      ).then((m) => m.SkipWhileComponent),
+  },
+  {
+    path: 'distinct',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/distinct/distinct.component'
+      ).then((m) => m.DistinctComponent),
+  },
 ];

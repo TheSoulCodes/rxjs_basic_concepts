@@ -37,6 +37,9 @@ export class HomeComponent {
     { id: 4, label: 'Take While', path: '/takewhile' },
     { id: 5, label: 'Skip', path: '/skip' },
     { id: 6, label: 'Skip Last', path: '/skiplast' },
+    { id: 7, label: 'Skip Until', path: '/skipuntil' },
+    { id: 8, label: 'Skip While', path: '/skipwhile' },
+    { id: 9, label: 'Distinct', path: '/distinct' },
   ];
 
   miscellaneousList: any = [
