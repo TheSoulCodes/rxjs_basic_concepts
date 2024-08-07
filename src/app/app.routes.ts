@@ -139,4 +139,25 @@ export const routes: Routes = [
         './components/operators/filtering/distinct/distinct.component'
       ).then((m) => m.DistinctComponent),
   },
+  {
+    path: 'distinctuntilchanged',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/distinct-until-changed/distinct-until-changed.component'
+      ).then((m) => m.DistinctUntilChangedComponent),
+  },
+  {
+    path: 'distinctkeyuntilchanged',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/distinct-until-key-changed/distinct-until-key-changed.component'
+      ).then((m) => m.DistinctUntilKeyChangedComponent),
+  },
+  {
+    path: 'filter',
+    loadComponent: () =>
+      import('./components/operators/filtering/filter/filter.component').then(
+        (m) => m.FilterComponent
+      ),
+  },
 ];
