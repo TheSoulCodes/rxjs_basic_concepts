@@ -51,6 +51,10 @@ export class HomeComponent {
     { id: 14, label: 'throttle', path: '/throttle' },
     { id: 15, label: 'first', path: '/first' },
     { id: 16, label: 'last', path: '/last' },
+    { id: 17, label: 'debounce', path: '/debounce' },
+    { id: 18, label: 'Element At', path: '/elementat' },
+    { id: 19, label: 'Ignore Elements', path: '/ignoreelements' },
+    { id: 20, label: 'Single', path: '/single' },
   ];
 
   miscellaneousList: any = [

@@ -188,4 +188,32 @@ export const routes: Routes = [
         (m) => m.LastComponent
       ),
   },
+  {
+    path: 'debounce',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/debounce/debounce.component'
+      ).then((m) => m.DebounceComponent),
+  },
+  {
+    path: 'elementat',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/element-at/element-at.component'
+      ).then((m) => m.ElementAtComponent),
+  },
+  {
+    path: 'ignoreelements',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/ignore-elements/ignore-elements.component'
+      ).then((m) => m.IgnoreElementsComponent),
+  },
+  {
+    path: 'single',
+    loadComponent: () =>
+      import('./components/operators/filtering/single/single.component').then(
+        (m) => m.SingleComponent
+      ),
+  },
 ];
