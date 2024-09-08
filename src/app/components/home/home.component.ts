@@ -41,8 +41,16 @@ export class HomeComponent {
     { id: 8, label: 'Skip While', path: '/skipwhile' },
     { id: 9, label: 'Distinct', path: '/distinct' },
     { id: 10, label: 'Distinct Until Changed', path: '/distinctuntilchanged' },
-    { id: 11, label: 'Distinct Key Until Changed', path: '/distinctkeyuntilchanged' },
+    {
+      id: 11,
+      label: 'Distinct Key Until Changed',
+      path: '/distinctkeyuntilchanged',
+    },
     { id: 12, label: 'filter', path: '/filter' },
+    { id: 13, label: 'audit', path: '/audit' },
+    { id: 14, label: 'throttle', path: '/throttle' },
+    { id: 15, label: 'first', path: '/first' },
+    { id: 16, label: 'last', path: '/last' },
   ];
 
   miscellaneousList: any = [

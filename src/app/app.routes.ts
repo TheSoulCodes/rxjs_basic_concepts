@@ -160,4 +160,32 @@ export const routes: Routes = [
         (m) => m.FilterComponent
       ),
   },
+  {
+    path: 'audit',
+    loadComponent: () =>
+      import('./components/operators/filtering/audit/audit.component').then(
+        (m) => m.AuditComponent
+      ),
+  },
+  {
+    path: 'throttle',
+    loadComponent: () =>
+      import(
+        './components/operators/filtering/throttle/throttle.component'
+      ).then((m) => m.ThrottleComponent),
+  },
+  {
+    path: 'first',
+    loadComponent: () =>
+      import('./components/operators/filtering/first/first.component').then(
+        (m) => m.FirstComponent
+      ),
+  },
+  {
+    path: 'last',
+    loadComponent: () =>
+      import('./components/operators/filtering/last/last.component').then(
+        (m) => m.LastComponent
+      ),
+  },
 ];
