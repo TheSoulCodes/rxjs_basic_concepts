@@ -18,6 +18,7 @@ export class HomeComponent {
     { id: 2, label: 'from', path: '/from' },
     { id: 3, label: 'new_observable', path: '/new_observable' },
     { id: 4, label: 'functionObs', path: '/function_observable' },
+    { id: 5, label: 'ajax', path: '/ajax' },
   ];
 
   pipeableList: any = [];
@@ -28,6 +29,8 @@ export class HomeComponent {
     { id: 3, label: 'Buffer Time', path: '/buffertime' },
     { id: 4, label: 'Buffer Toggle', path: '/buffertoggle' },
     { id: 5, label: 'Buffer When', path: '/bufferwhen' },
+    { id: 6, label: 'Map', path: '/map' },
+    { id: 7, label: 'Map To', path: '/mapto' },
   ];
 
   filteringList: any = [

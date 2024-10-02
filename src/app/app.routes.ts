@@ -216,4 +216,25 @@ export const routes: Routes = [
         (m) => m.SingleComponent
       ),
   },
+  {
+    path: 'map',
+    loadComponent: () =>
+      import('./components/operators/transformation/map/map.component').then(
+        (m) => m.MapComponent
+      ),
+  },
+  {
+    path: 'mapto',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/mapto/mapto.component'
+      ).then((m) => m.MaptoComponent),
+  },
+  {
+    path: 'ajax',
+    loadComponent: () =>
+      import('./components/operators/creation/ajax/ajax.component').then(
+        (m) => m.AjaxComponent
+      ),
+  },
 ];
