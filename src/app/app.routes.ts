@@ -237,4 +237,60 @@ export const routes: Routes = [
         (m) => m.AjaxComponent
       ),
   },
+  {
+    path: 'mergemap',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/merge-map/merge-map.component'
+      ).then((m) => m.MergeMapComponent),
+  },
+  {
+    path: 'mergemapto',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/merge-map-to/merge-map-to.component'
+      ).then((m) => m.MergeMapToComponent),
+  },
+  {
+    path: 'concatmap',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/concat-map/concat-map.component'
+      ).then((m) => m.ConcatMapComponent),
+  },
+  {
+    path: 'concatmapto',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/concat-map-to/concat-map-to.component'
+      ).then((m) => m.ConcatMapToComponent),
+  },
+  {
+    path: 'exhaustmap',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/exhaust-map/exhaust-map.component'
+      ).then((m) => m.ExhaustMapComponent),
+  },
+  {
+    path: 'switchmap',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/switch-map/switch-map.component'
+      ).then((m) => m.SwitchMapComponent),
+  },
+  {
+    path: 'switchmapto',
+    loadComponent: () =>
+      import(
+        './components/operators/transformation/switch-map-to/switch-map-to.component'
+      ).then((m) => m.SwitchMapToComponent),
+  },
+  {
+    path: 'subject',
+    loadComponent: () =>
+      import('./components/subjects/subjects/subjects.component').then(
+        (m) => m.SubjectsComponent
+      ),
+  },
 ];

@@ -42,4 +42,15 @@
             }
         </ul>
     </div>
+
+    <div class="operator_containers subjects_main_container">
+        <h1>Subjects:</h1>
+        <ul class="operator_elements">
+            @for(operator of subjectsList; track operator.id){
+                <li>
+                    <a [routerLink]="operator.path" routerLinkActive="active" >{{operator.label}}</a>
+                </li>
+            }
+        </ul>
+    </div>
 </div>

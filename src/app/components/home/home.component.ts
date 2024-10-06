@@ -31,6 +31,13 @@ export class HomeComponent {
     { id: 5, label: 'Buffer When', path: '/bufferwhen' },
     { id: 6, label: 'Map', path: '/map' },
     { id: 7, label: 'Map To', path: '/mapto' },
+    { id: 8, label: 'Merge Map', path: '/mergemap' },
+    { id: 9, label: 'Merge Map To', path: '/mergemapto' },
+    { id: 10, label: 'Concat Map', path: '/concatmap' },
+    { id: 11, label: 'Concat Map To', path: '/concatmapto' },
+    { id: 12, label: 'Exhaust Map', path: '/exhaustmap' },
+    { id: 13, label: 'Switch Map', path: '/switchmap' },
+    { id: 14, label: 'Switch Map To', path: '/switchmapto' },
   ];
 
   filteringList: any = [
@@ -63,4 +70,6 @@ export class HomeComponent {
   miscellaneousList: any = [
     { id: 1, label: 'unsubscribe', path: '/unsubscribe' },
   ];
+
+  subjectsList: any = [{ id: 1, label: 'subject', path: '/subject' }];
 }
