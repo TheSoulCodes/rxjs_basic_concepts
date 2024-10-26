@@ -68,8 +68,12 @@ export class HomeComponent {
   ];
 
   miscellaneousList: any = [
-    { id: 1, label: 'unsubscribe', path: '/unsubscribe' },
+    { id: 1, label: 'Unsubscribe', path: '/unsubscribe' },
+    { id: 2, label: 'Multicast', path: '/multicast' },
   ];
 
-  subjectsList: any = [{ id: 1, label: 'subject', path: '/subject' }];
+  subjectsList: any = [
+    { id: 1, label: 'Subject', path: '/subject' },
+    { id: 2, label: 'Cold Observables', path: '/coldobservables' },
+  ];
 }

@@ -293,4 +293,18 @@ export const routes: Routes = [
         (m) => m.SubjectsComponent
       ),
   },
+  {
+    path: 'coldobservables',
+    loadComponent: () =>
+      import(
+        './components/subjects/cold-observables/cold-observables.component'
+      ).then((m) => m.ColdObservablesComponent),
+  },
+  {
+    path: 'multicast',
+    loadComponent: () =>
+      import('./components/miscellaneous/multicast/multicast.component').then(
+        (m) => m.MulticastComponent
+      ),
+  },
 ];
