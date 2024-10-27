@@ -342,4 +342,25 @@ export const routes: Routes = [
         (m) => m.VoidSubjectComponent
       ),
   },
+  {
+    path: 'publishbehavior',
+    loadComponent: () =>
+      import(
+        './components/multicasting/publish-behavior/publish-behavior.component'
+      ).then((m) => m.PublishBehaviorComponent),
+  },
+  {
+    path: 'publishlast',
+    loadComponent: () =>
+      import(
+        './components/multicasting/publish-last/publish-last.component'
+      ).then((m) => m.PublishLastComponent),
+  },
+  {
+    path: 'publishreplay',
+    loadComponent: () =>
+      import(
+        './components/multicasting/publish-replay/publish-replay.component'
+      ).then((m) => m.PublishReplayComponent),
+  },
 ];

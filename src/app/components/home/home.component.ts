@@ -79,6 +79,9 @@ export class HomeComponent {
   multicastingList: any = [
     { id: 1, label: 'Multicast', path: '/multicast' },
     { id: 2, label: 'Share', path: '/share' },
+    { id: 3, label: 'Publish Behavior', path: '/publishbehavior' },
+    { id: 4, label: 'Publish Last', path: '/publishlast' },
+    { id: 5, label: 'Publish Replay', path: '/publishreplay' },
   ];
 
   miscellaneousList: any = [
