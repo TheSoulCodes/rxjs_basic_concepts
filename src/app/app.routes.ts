@@ -303,8 +303,43 @@ export const routes: Routes = [
   {
     path: 'multicast',
     loadComponent: () =>
-      import('./components/miscellaneous/multicast/multicast.component').then(
+      import('./components/multicasting/multicast/multicast.component').then(
         (m) => m.MulticastComponent
+      ),
+  },
+  {
+    path: 'share',
+    loadComponent: () =>
+      import('./components/multicasting/share/share.component').then(
+        (m) => m.ShareComponent
+      ),
+  },
+  {
+    path: 'behaviorsubject',
+    loadComponent: () =>
+      import(
+        './components/subjects/behavior-subject/behavior-subject.component'
+      ).then((m) => m.BehaviorSubjectComponent),
+  },
+  {
+    path: 'replaysubject',
+    loadComponent: () =>
+      import(
+        './components/subjects/replay-subject/replay-subject.component'
+      ).then((m) => m.ReplaySubjectComponent),
+  },
+  {
+    path: 'asyncsubject',
+    loadComponent: () =>
+      import(
+        './components/subjects/async-subject/async-subject.component'
+      ).then((m) => m.AsyncSubjectComponent),
+  },
+  {
+    path: 'voidsubject',
+    loadComponent: () =>
+      import('./components/subjects/void-subject/void-subject.component').then(
+        (m) => m.VoidSubjectComponent
       ),
   },
 ];

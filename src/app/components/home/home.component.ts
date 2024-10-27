@@ -67,13 +67,21 @@ export class HomeComponent {
     { id: 20, label: 'Single', path: '/single' },
   ];
 
-  miscellaneousList: any = [
-    { id: 1, label: 'Unsubscribe', path: '/unsubscribe' },
-    { id: 2, label: 'Multicast', path: '/multicast' },
-  ];
-
   subjectsList: any = [
     { id: 1, label: 'Subject', path: '/subject' },
     { id: 2, label: 'Cold Observables', path: '/coldobservables' },
+    { id: 3, label: 'Behavior Subject', path: '/behaviorsubject' },
+    { id: 4, label: 'Replay Subject', path: '/replaysubject' },
+    { id: 5, label: 'Async Subject', path: '/asyncsubject' },
+    { id: 6, label: 'Void Subject', path: '/voidsubject' },
+  ];
+
+  multicastingList: any = [
+    { id: 1, label: 'Multicast', path: '/multicast' },
+    { id: 2, label: 'Share', path: '/share' },
+  ];
+
+  miscellaneousList: any = [
+    { id: 1, label: 'Unsubscribe', path: '/unsubscribe' },
   ];
 }
